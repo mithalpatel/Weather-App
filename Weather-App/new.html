@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../Weather-App/new.js"></script>
+    <link rel="stylesheet" href="../Weather-App/new.css" />
+    <link rel="icon" href="https://purepng.com/public/uploads/large/weather-forecast-symbol-v7o.png">
+    <script src="https://kit.fontawesome.com/5e8429a6ac.js" crossorigin="anonymous"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+         <div class="weatherContainer">
+           <input type="search"
+               placeholder="Enter city Name"
+               id="searchCity"
+               required>
+            <button onClick="weatherApi()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div id="climate" style="margin-left: 63px;">
+                <h3 id="weather">-------</h3>
+              <div>
+                <h3 id="temprature">----°C</h3>
+                <img id="temp-icon" src="..\Weather-App\img\cloud-img.png" alt="" style="width: 40%; height: auto;">
+              </div>
+                <div id="scattered">
+                    <p id="scatteredClouds">-----</p>
+                    <p id="humidity">--------</p>
+                    <p id="windSpeed">-------</p>
+                </div>
+            </div>
